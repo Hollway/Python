@@ -15,5 +15,22 @@ def func(a: int, b: int) -> int:
 
 func(2, 3)
 
+def check_n():
+    n = int(input("Задайте размер таблицы n x n: "))
+    while True:
+        if n < 1 or n > 10**5:
+            print("Некорректный ввод. Повторите еще раз")
+        else:
+            return n
+
+def check_k():
+    k = int(input("Задайте параметр k "))
+    while True:
+        if k < 1 or k > 10**9:
+            print("Некорректный ввод. Повторите еще раз")
+        else:
+            return k
+n = check_n()
+k = check_k()
 
 # decorator 
