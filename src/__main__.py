@@ -21,7 +21,7 @@ def decor(abt):
         res = abt()
         print("{:-^35}".format(""))
         return res
-        
+
     return _executor
 
 
@@ -45,11 +45,11 @@ def stats():
     decorFunc = str(len(A))
     decorFunc = "Задекорировано функций: " + decorFunc
     count_int = str(count.count(k))
-    count_int = "Повторяющихся чисел в таблице:" + count_int
+    count_int = "Повторяющихся чисел k в таблице: " + count_int
     print(  "{:^35}".format(decorFunc),
             "\n{:^35}".format(count_int)
     )
 
-
-count = create_table()
-stats()
+if __name__ == "__main__":
+    count = create_table()
+    stats()
