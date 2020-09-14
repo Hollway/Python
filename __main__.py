@@ -24,6 +24,9 @@ def decor(abt):
 
     return _executor
 
+def menu():
+    pass
+
 
 @decor
 def create_table ():
@@ -49,6 +52,7 @@ def stats():
     print(  "{:^35}".format(decorFunc),
             "\n{:^35}".format(count_int)
     )
+
 
 if __name__ == "__main__":
     count = create_table()
